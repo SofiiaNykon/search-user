@@ -13,7 +13,7 @@ async function renderList(){
     }
 }
 function filterUser(e){
-    const userListItems = document.getElementByClassName("list-items");
+    const userListItems = document.getElementsByClassName("list-items");
     for(const user of userListItems){
         if(!user.innerHTML.startsWith(e.target.value)){
             user.classList.add("hidden");
